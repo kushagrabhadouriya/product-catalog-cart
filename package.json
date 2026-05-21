@@ -1,0 +1,21 @@
+{
+  "name": "product-catalog-cart",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Next.js product catalog with a persistent cart for an SDET coding assignment.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+}

@@ -6,7 +6,8 @@ export default async function HomePage() {
   let error = null;
 
   try {
-    products = await getProducts();
+    const response = await fetch("https://dummyjson.com/products");
+    products = await response.json();
   } catch (err) {
     error = err;
   }
@@ -25,7 +26,7 @@ export default async function HomePage() {
         </div>
       ) : (
         <div className="product-grid">
-          {products.map((product) => (
+          {products?.products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

@@ -35,4 +35,4 @@ npm start
 
 The project uses the Next.js App Router. Server components fetch product data through a small API layer in `lib/api.js`, which centralizes error handling for failed requests and malformed responses. Cart state is managed in a client-side React context and persisted to `localStorage`, while the reusable cart operations live in `lib/cart.js` so they can be unit tested without rendering the UI.
 
-Generated code blocks were created with AI assistance and reviewed as part of this implementation.
+
